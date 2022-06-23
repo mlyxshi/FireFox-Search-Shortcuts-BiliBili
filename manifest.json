@@ -1,0 +1,25 @@
+{
+	"name": "BiliBili Search",
+	"description": "Add BiliBili to your search engine",
+	"version": "0.1",
+	"manifest_version": 2,
+	"applications": {
+		"gecko": {
+			"id": "bilibili@search",
+			"strict_min_version": "64.0"
+		}
+	},
+	"icons": {
+		"16": "favicon.ico"
+	},
+	"web_accessible_resources": [
+		"favicon.ico"
+	],
+	"chrome_settings_overrides": {
+		"search_provider": {
+			"name": "BiliBili",
+			"keyword": "@bili",
+			"search_url": "https://search.bilibili.com/all?keyword={searchTerms}"
+		}
+	}
+}
